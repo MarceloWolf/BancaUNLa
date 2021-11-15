@@ -38,6 +38,7 @@
 					<th scope="col">Nombre</th>
 					<th scope="col">Apellido</th>
 					<th scope="col">Documento</th>
+					<th scope="col">Cuenta en pesos</th>
 					<th scope="col">Tarjetas de Crédito</th>
 					<th scope="col">Tarjetas de Débito</th>
 					
@@ -49,6 +50,7 @@
 					<th scope="row" th:text="${li.nombre}"></th>
 					<th scope="row" th:text="${li.apellido}"></th>
 					<th scope="row" th:text="${li.dniPersona}"></th>
+					<th scope="row" th:text="${li.cuenta}"></th>
 					<td>
 						<a class="btn btn-success btn-sm" th:href="@{/clienteBanca/lista/tarjetasCredito/}+${li.dniPersona}" th:text="Ver"
 							title="Ver tarjetas de crédito">

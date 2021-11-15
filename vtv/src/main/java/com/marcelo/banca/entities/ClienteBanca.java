@@ -22,7 +22,7 @@ import com.marcelo.banca.entities.TarjetaDebito;
 public class  ClienteBanca extends Persona {
 	
 	
-
+	public long cuenta;
 	
 	
 	/*@OneToMany(fetch = FetchType.LAZY)
@@ -38,11 +38,29 @@ public class  ClienteBanca extends Persona {
 	
 
 
-	public ClienteBanca(String nombre, String apellido, int dniPersona) {
+	public ClienteBanca(String nombre, String apellido, int dniPersona, long cuenta) {
 		super(nombre, apellido, dniPersona);
+		
+	this.cuenta=cuenta;
 		
 	
 	}
+	
+	
+
+
+
+	public long getCuenta() {
+		return cuenta;
+	}
+
+
+
+
+	public void setCuenta(long cuenta) {
+		this.cuenta = cuenta;
+	}
+
 
 
 
